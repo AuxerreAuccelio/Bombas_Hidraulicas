@@ -1,7 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
     overflow-x: hidden; /* evita barras de rolagem laterais indesejadas */
+
 }
 
 .botoes {
@@ -15,6 +19,8 @@ body {
     width: 100%; /* garante que pegue a tela inteira */
     box-sizing: border-box; /* evita que o padding empurre a linha para fora da tela */
     margin-top: 0px; /* move a div inteira 0px para baixo */
+    height: auto;
+
 }
 
 .nav_links {
@@ -38,7 +44,7 @@ body {
 }
 
 .nav_links button {
-    /* background-color: white; */
+    background-color: white;
     color: blue;
     border: none;
     padding: 8px 15px;
@@ -56,11 +62,14 @@ body {
 
 .titulo {
     background-color: darkcyan;
-    padding: 100px;
+    padding: 50px;
     align-items: center;
     display: flex;
     justify-content: center;
     color: white;
+
+    background: linear-gradient(to right, rgb(14, 77, 14), rgb(19, 97, 97));
+
 }
 
 .secoes {
@@ -68,21 +77,18 @@ body {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    max-height: 75%;
 }
 
 .bombas {    
     display: flex;
     justify-content: center;
-    margin: 10px auto;
-    /* width: 100%;
-    max-width: 100px; */
-    gap: 50px;
-    
+    margin: 0px auto;
 }
 
 .bombas img {
     width: 100%;
-    height: 200px;
+    height: 120px;
     display: block; /* Remove espaços vazios indesejados abaixo da imagem */
     object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer, cortando as sobras */
 }
@@ -90,26 +96,23 @@ body {
 .bomba1, .bomba2, .bomba3 {
     border: 1px #eee solid;
     border-radius: 10px;
-    padding: 0px;
+    padding: 0 50px;
     overflow: hidden; /* esconde as partes estouradas que passam das bordas arredondadas */ 
     display: flex;
     flex-direction: column;
 }
 
 .bomba1 h4, .bomba2 h4, .bomba3 h4 {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .bomba1 p, .bomba2 p, .bomba3 p {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .bomba1 button, .bomba2 button, .bomba3 button {
     padding: 10px; 
-}
-
-.espaco {
-    padding: 50px;
+    margin: 5px;
 }
 
 .espaco2 {
@@ -120,11 +123,10 @@ body {
     display: flex;    
     flex-direction: column;
     align-items: center; /* centraliza o bloco todo no centro */
-    /* justify-content: center; */
     text-align: center;
     background-color: rgb(160, 233, 209);
-    padding: 50px;
-    /* border: 2px solid crimson; */
+    padding-bottom: 20px;
+    
 }
 
 .redes_imagens {
@@ -133,16 +135,12 @@ body {
     align-items: center;
     /* border: 2px solid greenyellow;     */
     gap: 5px;
-    width: auto;
-    /* height: 50px; */
-    /* object-fit: cover; */
-    /* overflow: hidden; */
+    width: 100%;
 }
 
 .redes_imagens img {
-    width: 50px;
-    height: 50px;
-
+    width: 30px;
+    height: 30px;
     object-fit: cover; /* preenche os 50x50 cortando as bordas sem distorcer */
     overflow: hidden; /* garante que nada saia da caixa 50x50 */
     border-radius: 10px;
@@ -169,6 +167,7 @@ body {
     background-color: black;
     color: white;
     padding: 5px;
+
 }
 
 button {
@@ -179,8 +178,10 @@ button {
 }
 
 .titulo {
-    background: linear-gradient(to right, rgb(14, 77, 14), rgb(19, 97, 97))
+    
 }
+
+
 
 .body_sobre {
     background-color: #ddd;
@@ -215,8 +216,8 @@ button {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
-    /* align-items: center; */
+    text-align: center;
+    min-height: 100 dvh;
 }
 
 .unique {
@@ -235,26 +236,26 @@ button {
 }
 
 .formulario {
-    width: 100%;
+    width: 90%;
 }
 
-.formulario form {
+.formulario #form_contato {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 100%;
+    min-width: 100 dvw;
 }
 
 .formulario input,
 .formulario textarea {
     width: 100%;
-    padding: 10px;
+    padding: 10px; /* espaços dentro dos inputs  */
     border-radius: 5px;
     box-sizing: border-box; /* garante que o padding não estoure a caixa de diálogo - largura  */
 }
 
 .formulario textarea {
-    height: 100px;
+    height: 150px;
     resize: none;
 }
 
@@ -264,5 +265,63 @@ button {
 }
 
 
+.body_login {
+  background-color: #ddd;
+  color: rgb(17, 108, 194);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.unick .imagem {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.unick .imagem img {
+    display: block; /* remove um pequeno espaço vazio que as imagens costumam ter embaixo*/
+    height: auto;
+    max-width: 10%;
+}
+
+.acessar {
+  background-color: rgb(17, 108, 194);
+}
+
+.unick {
+  background-color: white !important;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 25%;
+  max-width: 95 dvw;
+  overflow: hidden;
+  border: 2px solid #eee;
+}
+
+#form_login {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#nome,
+#email,
+#area {
+  /* border: 2px solid green; */
+  width: 98%;
+}
 
 

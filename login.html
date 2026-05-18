@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./hidraulica.js" defer></script>
+    <title>Login</title>
   </head>
-  <body class="body_sobre">
+  <body class="body_login">
     <header>
       <div class="botoes">
         <div class="logo">
@@ -20,18 +21,21 @@
               <!-- active -->
             </a>
           </div>
+
           <div class="sobre">
             <a href="sobre.html">
               <button class="btn_sobre">Sobre</button>
               <!-- active -->
             </a>
           </div>
+
           <div class="contato">
             <a href="contato.html">
               <button class="btn_contato">Contato</button>
               <!-- active -->
             </a>
           </div>
+
           <div class="login">
             <a href="login.html">
               <button class="btn_login">Login</button>
@@ -41,31 +45,29 @@
         </div>
       </div>
     </header>
-    <div class="unica">
-      <div class="titulo_sobre">
-        <h1>Nossa História</h1>
+
+    <div class="unick">
+      <div class="imagem">
+        <img src="./4.jpeg" alt="Logo" />
       </div>
-      <div class="fabrica">
-        <img src="./3.jpeg" alt="Fábrica" />
+
+      <div class="titulo_login">
+        <h1>Login</h1>
       </div>
-      <div class="texto1">
-        <p>
-          A Hidráulica Pro nasceu com o objetivo de oferecer as melhores
-          soluções em bombeamento de água. Com mais de 15 anos de mercado, somos
-          líderes em tecnologia.
-        </p>
-      </div>
-      <div class="texto2">
-        <p>
-          Nossa missão é garantir eficiência e sustentabilidade em cada projeto.
-        </p>
-      </div>
+
+      <form action="" id="form_login">
+        <div class="Email_login">
+          <label for=""></label>
+          <input type="email" id="email_login" placeholder="Digite seu e-mail" />
+        </div>
+
+        <div class="Senha_login">
+          <label for=""></label>
+          <input type="text" id="senha_login" placeholder="Digite sua senha" />
+        </div>
+
+        <button class="acessar" type="submit">Acessar</button>
+      </form>
     </div>
-    <footer>
-      <div class="copyright">
-        <p>&copy 2026 Hidráulica Pro - Todos os direitos reservados.</p>
-      </div>
-    </footer>
-    <script src="./hidraulica.js"></script>
   </body>
 </html>
