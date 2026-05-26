@@ -82,7 +82,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
-
+  const mostrar_produto = document.querySelector('.acessar');
+  mostrar_produto.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+  });
 
 
 });
