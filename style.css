@@ -1,75 +1,57 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100dvh;
-    overflow-x: hidden; /* evita barras de rolagem laterais indesejadas */
-
-}
+margin:0;
+padding: 0;
+overflow-x: hidden; 
+} /* evita barras de rolagem laterais indesejadas */
 
 .botoes {
-    display: flex;
-    align-items: center; /* alinha verticalmente ao centro */
-    justify-content: space-between; /* empurra o conteúdo em espaços iguais */
-    padding: 15px 25px;
-    background-color: white;
-    border-top: 1px solid #000;
-    border-bottom: 2px solid rgb(17,108,194);
-    width: 100%; /* garante que pegue a tela inteira */
-    box-sizing: border-box; /* evita que o padding empurre a linha para fora da tela */
-    margin-top: 0px; /* move a div inteira 0px para baixo */
-    height: auto;
-
+display: flex;
+align-items: center; /* alinha verticalmente ao centro */
+justify-content: space-between; /* empurra o conteúdo em espaços iguais */
+padding: 15px 25px;
+background-color: white;
+border-top: 1px solid #000;
+border-bottom: 2px solid rgb(17,108,194);
+width: 100%; /* garante que pegue a tela inteira */
+box-sizing: border-box; /* evita que o padding empurre a linha para fora da tela */
+margin-top: 0px; /* move a div inteira 0px para baixo */
 }
 
 .nav_links {
-    display: flex; /* faz os itens (home, sobre, contato) ficarem em linha */
-    gap: 20px;     /* cria o espaçamento entre eles */
-    
+display: flex; /* faz os itens (home, sobre, contato) ficarem em linha */
+gap: 20px; /* cria o espaçamento entre eles */
 }
 
 .nav_links .home .btn_home,
 .nav_links .sobre .btn_sobre,
-.nav_links .contato .btn_contato {
-    background-color: white;
-    color: blue;
+.nav_links .contato .btn_contato,
+.nav_links .login .btn_login {
+background-color: white;
+color: blue;
 }
 
-.nav_links button.active {    
-    background-color: rgb(17, 108, 194) !important;
+
+.nav_links button.active {
+    background-color: rgb(17,108,194) !important;
     color: white !important;
     border-radius: 3px;
     font-weight: bold;
 }
 
 .nav_links button {
-    background-color: white;
+    background-color: #eee;
     color: blue;
     border: none;
     padding: 8px 15px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 3px;
-    
 }
 
 .nav_links button:hover:not(.active){
-    background-color: rgb(17, 108, 194);
+    background-color: rgb(17,108,194);
     color: white;
-    opacity: 0.95;
-}
-
-.titulo {
-    background-color: darkcyan;
-    padding: 50px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color: white;
-
-    background: linear-gradient(to right, rgb(14, 77, 14), rgb(19, 97, 97));
-
+    opacity: 0.95s;
 }
 
 .secoes {
@@ -77,42 +59,45 @@ body {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    max-height: 75%;
 }
 
-.bombas {    
+.bombas {
     display: flex;
     justify-content: center;
-    margin: 0px auto;
+    margin: 10px auto;
+    gap: 50px;
 }
 
 .bombas img {
     width: 100%;
-    height: 120px;
-    display: block; /* Remove espaços vazios indesejados abaixo da imagem */
-    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer, cortando as sobras */
+    height: 200px;
+    display: block;
+    object-fit: cover;
 }
 
-.bomba1, .bomba2, .bomba3 {
+.bombas1, .bombas2, .bombas3 {
     border: 1px #eee solid;
     border-radius: 10px;
-    padding: 0 50px;
-    overflow: hidden; /* esconde as partes estouradas que passam das bordas arredondadas */ 
+    padding: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
 
-.bomba1 h4, .bomba2 h4, .bomba3 h4 {
-    padding: 0 5px;
+.bombas1 h4, .bombas2 h4, .bombas3 h4 {
+    padding: 0 10px;
 }
 
-.bomba1 p, .bomba2 p, .bomba3 p {
-    padding: 0 5px;
+.bombas1 p, .bombas2 p, .bombas3 p {
+    padding: 0;
 }
 
-.bomba1 button, .bomba2 button, .bomba3 button {
-    padding: 10px; 
-    margin: 5px;
+.bombas1 button, .bombas2 button, .bombas3 button {
+    padding: 10px;
+}
+
+.espaco {
+    padding: 50px;
 }
 
 .espaco2 {
@@ -120,34 +105,34 @@ body {
 }
 
 .redes_sociais {
-    display: flex;    
+    display: flex;
     flex-direction: column;
-    align-items: center; /* centraliza o bloco todo no centro */
+    align-items: center;
     text-align: center;
     background-color: rgb(160, 233, 209);
-    padding-bottom: 20px;
-    
+    padding: 50px;
 }
 
 .redes_imagens {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid greenyellow;     */
     gap: 5px;
-    width: 100%;
+    width: auto;
+    gap: 5px;
+    width: auto;
 }
 
 .redes_imagens img {
-    width: 30px;
-    height: 30px;
-    object-fit: cover; /* preenche os 50x50 cortando as bordas sem distorcer */
-    overflow: hidden; /* garante que nada saia da caixa 50x50 */
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    overflow: hidden;
     border-radius: 10px;
 }
 
 .redes_imagens img:hover {
-    transform: scale(1.1); /* efeito visual ao passar o mouse */
+    transition: scale(1.1);
 }
 
 .logo {
@@ -157,172 +142,140 @@ body {
 }
 
 .logo img {
-    object-fit: cover; /* Agora sim! Ele corta a imagem para caber nos 50px sem distorcer */
-    width: 100%; /* Faz a imagem ter a largura da div (50px) */
-    height: 100%; /* Faz a imagem ter a altura da div (50px) */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .copyright {
     text-align: center;
     background-color: black;
-    color: white;
+    columns: white;
     padding: 5px;
-
 }
 
 button {
     background-color: green;
     color: white;
     padding: 15px;
-    border-radius: 5px
+    border-radius: 5px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo {
-    
+    background: linear-gradient(to right, rgb(14, 77, 14), rgb(19, 97, 97));
 }
 
+.titulo h1{
+    text-align: center;
+    flex-grow: 1;
+}
 
 
 .body_sobre {
     background-color: #ddd;
     margin: 0;
-    display: flex; /* Precisa-se de display: flex na div Pai juntamente com o margin: auto na div Filho e 
-                    min-height: 100hv na div Pai */
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 .unica {
-    /* border: 2px solid crimson; */
     background-color: white !important;
     border-radius: 10px;
-    margin: auto; /* Precisa-se de display: flex na div Pai juntamente com o margin: auto na div Filho e 
-                    min-height: 100hv na div Pai */
- 
-    width: 63%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    text-align: center; 
+    text-align: center;
     align-items: center;
 }
 
 .unica p {
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
-.body_contato {    
-    background-color: #ddd;
-    margin: 0;
-    min-height: 100vh;
+ .body_contato {
+    background-color: #eee;
+    margin: 0;    
     display: flex;
     flex-direction: column;
     text-align: center;
-    min-height: 100 dvh;
-}
+    min-height: 100vh;
+     
+} 
 
 .unique {
-    /* border: 2px solid crimson; */
+    border: 2px solid blue;     
     background-color: white !important;
-    margin: auto;
     border-radius: 10px;
-    display: flex;
+    margin: auto;
+    display: flex;    
     flex-direction: column;
     text-align: center;
     align-items: center;
-    box-shadow: 0px 4px 10px rgba(0,0,0,1);
-    padding: 5px 10px 5px 10px;
-    width: 40%;
-    max-width: 500px;
+    width: 30%;
+    padding-bottom: 50px;
+    padding-top: 30px;
+
+    /* flex-grow: 1; */
 }
 
 .formulario {
+    /* border: 2px solid yellowgreen; */
     width: 90%;
 }
 
-.formulario #form_contato {
+#form_contato {
+    /* border: 2px solid crimson;     */
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    min-width: 100 dvw;
-}
-
-.formulario input,
-.formulario textarea {
-    width: 100%;
-    padding: 10px; /* espaços dentro dos inputs  */
-    border-radius: 5px;
-    box-sizing: border-box; /* garante que o padding não estoure a caixa de diálogo - largura  */
-}
-
-.formulario textarea {
-    height: 150px;
-    resize: none;
-}
-
-.enviar {
-    background-color: rgb(17, 108, 194);
-    font-weight: bold;
+    gap: 20px;
+    /* min-width: 100vh; */
 }
 
 
 .body_login {
-  background-color: #ddd;
-  color: rgb(17, 108, 194);
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.unick .imagem {
-    display: flex; 
+    background-color: #ddd;
+    color: rgb(17,108,194);
+    margin: 0;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.unick .imagem img {
-    display: block; /* remove um pequeno espaço vazio que as imagens costumam ter embaixo*/
-    height: auto;
-    max-width: 10%;
+    min-height: 100vh;
 }
 
 .acessar {
-  background-color: rgb(17, 108, 194);
+    background-color: rgb(17,108,194);
 }
 
 .unick {
-  background-color: white !important;
-  border-radius: 10px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  width: 25%;
-  max-width: 95 dvw;
-  overflow: hidden;
-  border: 2px solid #eee;
+    border: 2px solid rgb(28, 26, 165);
+    background-color: white !important;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: auto;
 }
 
 #form_login {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
 }
 
-#nome,
-#email,
-#area {
-  /* border: 2px solid green; */
-  width: 98%;
-}
+#nome, #email, #area {
+    /* border: 2px solid green; */
+    width: 98%;
+    
+ }
 
 .body_bemvindo {
     /* border: 2px solid orange; */
