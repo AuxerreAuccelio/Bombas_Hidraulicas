@@ -1,0 +1,159 @@
+{
+  "bombas_hidraulicas": [
+    {
+      "id": "bomba_engrenagem_externa",
+      "nome": "Bomba de Engrenagens Externas",
+      "categoria": "Deslocamento Positivo",
+      "tipo_deslocamento": "Fixo",
+      "especificacoes_tecnicas": {
+        "pressao_maxima_bar": 250,
+        "vazao_maxima_lpm": 150,
+        "velocidade_maxima_rpm": 4000,
+        "eficiencia_media_percentual": 85,
+        "viscosidade_fluido_cst": {
+          "minima": 10,
+          "maxima": 800
+        }
+      },
+      "aplicacoes_comuns": [
+        "Maquinário agrícola (tratores)",
+        "Empilhadeiras",
+        "Unidades de força hidráulica compactas",
+        "Sistemas de lubrificação automotiva"
+      ],
+      "vantagens": [
+        "Baixo custo de aquisição e manutenção",
+        "Alta tolerância a contaminações no fluido",
+        "Construção simples e robusta"
+      ],
+      "desvantagens": [
+        "Nível de ruído elevado em altas rotações",
+        "Eficiência cai com o desgaste das engrenagens"
+      ]
+    },
+    {
+      "id": "bomba_pistoes_axiais",
+      "nome": "Bomba de Pistões Axiais",
+      "categoria": "Deslocamento Positivo",
+      "tipo_deslocamento": "Variável",
+      "especificacoes_tecnicas": {
+        "pressao_maxima_bar": 450,
+        "vazao_maxima_lpm": 500,
+        "velocidade_maxima_rpm": 3000,
+        "eficiencia_media_percentual": 95,
+        "viscosidade_fluido_cst": {
+          "minima": 16,
+          "maxima": 1000
+        }
+      },
+      "aplicacoes_comuns": [
+        "Prensas hidráulicas industriais",
+        "Equipamentos de mineração pesada",
+        "Sistemas de alta pressão em aeronaves",
+        "Sistemas de circuito fechado (hidrostáticos)"
+      ],
+      "vantagens": [
+        "Altíssima eficiência volumétrica e mecânica",
+        "Suporta pressões extremamente elevadas",
+        "Fluxo variável ajustável por placa oscilante"
+      ],
+      "desvantagens": [
+        "Alto custo de fabricação",
+        "Extremamente sensível a partículas e sujeira no óleo"
+      ]
+    },
+    {
+      "id": "bomba_palhetas",
+      "nome": "Bomba de Palhetas",
+      "categoria": "Deslocamento Positivo",
+      "tipo_deslocamento": "Fixo/Variável",
+      "especificacoes_tecnicas": {
+        "pressao_maxima_bar": 210,
+        "vazao_maxima_lpm": 200,
+        "velocidade_maxima_rpm": 2800,
+        "eficiencia_media_percentual": 90,
+        "viscosidade_fluido_cst": {
+          "minima": 13,
+          "maxima": 800
+        }
+      },
+      "aplicacoes_comuns": [
+        "Injetoras de plástico",
+        "Máquinas-ferramenta industriais",
+        "Direções hidráulicas automotivas",
+        "Equipamentos industriais em ambientes fechados"
+      ],
+      "vantagens": [
+        "Operação extremamente silenciosa",
+        "Fluxo de saída com baixíssima pulsação",
+        "Manutenção simples com substituição de cartuchos"
+      ],
+      "desvantagens": [
+        "Não tolera fluidos de alta viscosidade na partida",
+        "Custo intermediário"
+      ]
+    },
+    {
+      "id": "bomba_centrifuga",
+      "nome": "Bomba Centrífuga",
+      "categoria": "Hidrodinâmica",
+      "tipo_deslocamento": "Não-positivo",
+      "especificacoes_tecnicas": {
+        "pressao_maxima_bar": 20,
+        "vazao_maxima_lpm": 2000,
+        "velocidade_maxima_rpm": 3500,
+        "eficiencia_media_percentual": 75,
+        "viscosidade_fluido_cst": {
+          "minima": 1,
+          "maxima": 150
+        }
+      },
+      "aplicacoes_comuns": [
+        "Sistemas de resfriamento e arrefecimento",
+        "Transferência de água e saneamento",
+        "Combate a incêndio",
+        "Alimentação de caldeiras"
+      ],
+      "vantagens": [
+        "Capacidade de entregar altíssimos volumes de vazão",
+        "Fluxo contínuo sem nenhuma pulsação",
+        "Poucas peças móveis (baixa manutenção)"
+      ],
+      "desvantagens": [
+        "Não gera altas pressões estáticas",
+        "Requer escorva (não é autoaspirante na maioria dos modelos)"
+      ]
+    },
+    {
+      "id": "bomba_diafragma",
+      "nome": "Bomba de Diafragma (Pneumática/Mecânica)",
+      "categoria": "Deslocamento Positivo",
+      "tipo_deslocamento": "Fixo",
+      "especificacoes_tecnicas": {
+        "pressao_maxima_bar": 8.5,
+        "vazao_maxima_lpm": 400,
+        "velocidade_maxima_rpm": 200,
+        "eficiencia_media_percentual": 70,
+        "viscosidade_fluido_cst": {
+          "minima": 1,
+          "maxima": 25000
+        }
+      },
+      "aplicacoes_comuns": [
+        "Transferência de produtos químicos agressivos ou ácidos",
+        "Indústria alimentícia (chocolates, xaropes, laticínios)",
+        "Esgotamento de lamas e fluidos abrasivos em obras",
+        "Indústria de tintas e solventes"
+      ],
+      "vantagens": [
+        "Pode rodar a seco sem danificar os componentes",
+        "Isolamento total entre o fluido e o mecanismo de acionamento",
+        "Excelente capacidade de autoaspiração"
+      ],
+      "desvantagens": [
+        "Fluxo altamente pulsante (requer amortecedores de pulsação)",
+        "Pressão máxima limitada"
+      ]
+    }
+  ]
+}
