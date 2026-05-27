@@ -1,8 +1,7 @@
-{
-  {
+{  
     "bombas_hidraulicas": [
     {
-      "id": "bomba_engrenagem_externa",
+      "id": 1,
       "nome": "Bomba de Engrenagens Externas",
       "categoria": "Deslocamento Positivo",
       "tipo_deslocamento": "Fixo",
@@ -33,7 +32,7 @@
       ]
     },
     {
-      "id": "bomba_pistoes_axiais",
+      "id": 2,
       "nome": "Bomba de Pistões Axiais",
       "categoria": "Deslocamento Positivo",
       "tipo_deslocamento": "Variável",
@@ -64,7 +63,7 @@
       ]
     },
     {
-      "id": "bomba_palhetas",
+      "id": 3,
       "nome": "Bomba de Palhetas",
       "categoria": "Deslocamento Positivo",
       "tipo_deslocamento": "Fixo/Variável",
@@ -95,7 +94,7 @@
       ]
     },
     {
-      "id": "bomba_centrifuga",
+      "id": 4,
       "nome": "Bomba Centrífuga",
       "categoria": "Hidrodinâmica",
       "tipo_deslocamento": "Não-positivo",
@@ -126,7 +125,7 @@
       ]
     },
     {
-      "id": "bomba_diafragma",
+      "id": 5,
       "nome": "Bomba de Diafragma (Pneumática/Mecânica)",
       "categoria": "Deslocamento Positivo",
       "tipo_deslocamento": "Fixo",
