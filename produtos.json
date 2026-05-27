@@ -1,5 +1,6 @@
 {
-  "bombas_hidraulicas": [
+  {
+    "bombas_hidraulicas": [
     {
       "id": "bomba_engrenagem_externa",
       "nome": "Bomba de Engrenagens Externas",
@@ -157,3 +158,4 @@
     }
   ]
 }
+

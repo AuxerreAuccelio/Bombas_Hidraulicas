@@ -92,6 +92,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
+  const consultar_produto = document.querySelector(".btn_bemvindo_menu");
+  if (consultar_produto) {
+    consultar_produto.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      window.location.href = "./consulta.html";
+    });
+  }
+
+
 });
 
 

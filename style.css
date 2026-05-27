@@ -293,7 +293,8 @@ body{
 }
 
 .subtitulo_h1,
-.bemvindo_header {
+.bemvindo_header, 
+.consulta_header {
     /* border: 2px solid rgb(26, 170, 115); */
     display: flex; 
     justify-content: space-between;
@@ -308,7 +309,8 @@ body{
 
 }
 
-.bemvindo {
+.bemvindo, 
+.consulta_main {
     /* border: 2px solid blueviolet; */
     display: flex;
     flex-grow: 1;
@@ -320,7 +322,8 @@ body{
     
 }
 
-.titulo_bemvindo {
+.titulo_bemvindo, 
+.titulo_consulta {
     /* border: 2px solid yellowgreen; */
     display: flex;
     flex-direction: column;
@@ -335,7 +338,8 @@ body{
     color: rgb(9, 12, 170);
 }
 
-.box {
+.box, 
+.box_consulta {
     /* border: 2px solid rgb(90, 90, 167); */
     border-radius: 10px;
     padding: 15px 70px;
@@ -343,7 +347,12 @@ body{
     
 }
 
-.btn_bemvindo{
+.box_consulta h1 {
+    color: rgb(9, 12, 170);
+}
+
+.btn_bemvindo, 
+.btn_consulta {
     cursor: pointer;    
     margin-top: 15px;
     margin-right: 15px;
@@ -351,10 +360,20 @@ body{
     background-color: rgb(230, 159, 27);
 }
 
-.btn_bemvindo_menu {
+.btn_bemvindo_menu, 
+.btn_consulta_menu {
     cursor: pointer;
     box-sizing: border-box;
     width: 90%;
     font-weight: bold;
     background-color: rgb(9, 12, 170);
+}
+
+#form_consulta {
+    /* border: 2px solid crimson;     */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    /* min-width: 100vh; */
 }
