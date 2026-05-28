@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imgBomba.src = bombaEncontrada.imagem;
     txtNome.innerHTML = `${bombaEncontrada.nome}`;
     txtCat.innerHTML = `${bombaEncontrada.categoria}`;
-    txtValor.innerHTML = `${bombaEncontrada.valor}`;
+    txtValor.innerHTML = `Valor em R$ ${bombaEncontrada.valor.toFixed(2)}`;
 
   }
 
