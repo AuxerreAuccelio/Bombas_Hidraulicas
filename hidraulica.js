@@ -102,6 +102,69 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
+  const imgBomba = document.getElementById('imagem_consulta');
+  const formConsulta = document.getElementById("form_consulta");
+  const inputConsulta = document.getElementById('consulta');
+  const urlJSON = './produtos.json';
+  const txtNome = document.getElementById('nome');
+  const txtCat = document.getElementById('cat');
+  const txtValor = document.getElementById('valor');
+  const txtErro = document.getElementById('erro_consulta');
+
+  formConsulta.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const idPesquisado = inputConsulta.value.trim();
+
+    if(idPesquisado){
+      
+      try {
+        const resposta = await fetch(urlJSON);
+        if(!resposta.ok){
+          throw new Error("Produto não encontrado!");
+        }
+
+        const dados = await resposta.json();
+
+        const bombaEncontrada = dados.bombas_hidraulicas.find(bomba => bomba.id == idPesquisado);
+        
+
+        if(bombaEncontrada){
+          txtErro.innerHTML = "";
+          mostrar_dados_Bomba(bombaEncontrada);
+        } else {
+          imgBomba.src = "";
+          txtNome.innerHTML = "";
+          txtCat.innerHTML = "";
+          txtValor.innerHTML = "";
+          txtErro.innerHTML = "Bomba com o ID não encontrada!";
+        }
+      }
+
+      catch (erro){
+          txtErro.innerHTML =  "Erro de conexão com o servidor";
+      }
+ 
+    }
+    
+  });
+ 
+
+  function mostrar_dados_Bomba(bombaEncontrada){
+    imgBomba.src = bombaEncontrada.imagem;
+    txtNome.innerHTML = `${bombaEncontrada.nome}`;
+    txtCat.innerHTML = `${bombaEncontrada.categoria}`;
+    txtValor.innerHTML = `${bombaEncontrada.valor}`;
+
+  }
+
+
+
+
+
+
+
+
+
 });
 
 
